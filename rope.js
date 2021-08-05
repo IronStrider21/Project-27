@@ -8,12 +8,12 @@ class Rope{
             pointB:{x:this.offsetX, y:this.offsetY}
 
         }
-        this.rope=Constraint.create(options)
+        this.rope=Constraint.create(options);
         World.add(world, this.rope);
     }
     display(){
-        var pointA = this.Rope.bodyA.position; 
-        var pointB = this.Rope.bodyB.position; 
+        var pointA = this.rope.bodyA.position; 
+        var pointB = this.rope.bodyB.position; 
         strokeWeight(2);
         var Anchor1X=pointA.x
         var Anchor1Y=pointA.y
